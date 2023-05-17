@@ -1,7 +1,7 @@
 /*
  * @Author: luoda
  * @Date: 2023-05-16 10:11:08
- * @LastEditTime: 2023-05-16 14:47:13
+ * @LastEditTime: 2023-05-16 16:52:11
  * @LastEditors: luoda
  * @Description:
  */
@@ -10,7 +10,7 @@ import { Image, View } from "@tarojs/components";
 import logoImg from "@/static/images/01_logo.png";
 import wechatImg from "@/static/images/02_wechat.png";
 import phoneImg from "@/static/images/03_phone.png";
-import { AtButton } from "taro-ui";
+import { AtButton, AtForm } from "taro-ui";
 import "./login.styl";
 
 export default function login() {
