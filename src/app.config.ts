@@ -5,6 +5,7 @@ export default defineAppConfig({
     "pages/plan/plan",
     "pages/account/account",
     "pages/mine/mine",
+    "pages/scanresult/scanresult"
   ],
   window: {
     backgroundTextStyle: "light",

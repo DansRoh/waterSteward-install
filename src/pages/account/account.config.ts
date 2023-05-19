@@ -1,10 +1,11 @@
 /*
  * @Author: luoda
  * @Date: 2023-05-17 14:35:50
- * @LastEditTime: 2023-05-17 14:37:08
+ * @LastEditTime: 2023-05-18 15:20:25
  * @LastEditors: luoda
- * @Description:  
+ * @Description:
  */
 export default definePageConfig({
-  navigationStyle: 'custom'
-})
+  navigationStyle: "custom",
+  disableScroll: true,
+});

@@ -1,7 +1,7 @@
 /*
  * @Author: luoda
  * @Date: 2023-05-17 14:47:36
- * @LastEditTime: 2023-05-17 16:08:49
+ * @LastEditTime: 2023-05-17 16:43:31
  * @LastEditors: luoda
  * @Description:
  */
@@ -65,7 +65,7 @@ const NavBar: React.FC<INavBarProps> = ({
           </View>
         )}
         <Text>{title}</Text>
-        <View>{children}</View>
+        {children}
       </View>
       {/* 添加一个同样高度的占位元素，防止内容被导航栏遮挡 */}
       <view style={{ height: statusBarHeight + navHeight + "px" }}></view>
