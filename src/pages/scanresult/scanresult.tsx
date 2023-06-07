@@ -1,16 +1,22 @@
 /*
  * @Author: luoda
  * @Date: 2023-05-19 14:17:44
- * @LastEditTime: 2023-05-19 14:43:24
+ * @LastEditTime: 2023-05-22 09:48:17
  * @LastEditors: luoda
  * @Description:
  */
 
 import { View } from "@tarojs/components";
-import { AtButton } from 'taro-ui'
+import Taro from "@tarojs/taro";
+import { AtButton } from "taro-ui";
 import "./scanresult.styl";
 
 export default function scanresult() {
+  const jumpToStep: () => void = () => {
+    Taro.navigateTo({
+      url: '/pages/step/step'
+    });
+  };
   return (
     <View className="scanresult-page">
       <text style={{ color: "#262626", fontSize: "32rpx" }}>
@@ -34,7 +40,9 @@ export default function scanresult() {
           </View>
         </View>
       </View>
-      <AtButton className="next-btn">信息匹配，下一步 &gt;</AtButton>
+      <AtButton onClick={jumpToStep} className="next-btn">
+        信息匹配，下一步 &gt;
+      </AtButton>
     </View>
   );
 }

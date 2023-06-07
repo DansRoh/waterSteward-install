@@ -5,7 +5,9 @@ export default defineAppConfig({
     "pages/plan/plan",
     "pages/account/account",
     "pages/mine/mine",
-    "pages/scanresult/scanresult"
+    "pages/scanresult/scanresult",
+    "pages/step/step",
+    "pages/calibration/calibration"
   ],
   window: {
     backgroundTextStyle: "light",
